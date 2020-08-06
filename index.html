@@ -7,15 +7,23 @@
     <link rel="stylesheet" type="text/css" href="style.css"
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div class="flex">
-    <div class="buttons">
-        <button class="start">Start</button>
-        <label class="label">Player 1</label>
-        <input type="text" name="player1" placeholder="Input name">
-        <label class="label">Player 2</label>
-        <input type="text" name="player2" placeholder="Input name">
+    <div class='startdiv'>
+        <div class="buttons">
+            <label class="label">Game type</label>
+            <select>
+                <option value="1">Single Player</option>
+                <option value="2">Multi Player</option>
+            </select>
+            <label class="label">Player 1</label>
+            <input type="text" name="player1" placeholder="Input name">
+            <label class="label">Player 2</label>
+            <input type="text" name="player2" placeholder="Input name">
+            <button class="start">Start</button>
+        </div>
     </div>
+    <div class="after">
+    <p class="h1">Tic Tac Toe</p>
+    <button class="start">Restart</button>
     <div id="container">
         <div class="cell" data-position="0"></div>
         <div class="cell" data-position="1"></div>
